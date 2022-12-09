@@ -1,9 +1,30 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+// reverse string functionality
+function reverseString(word)
+{
+  const wordArray = word.split('');
+  const reversedWordArray = wordArray.reverse();
+  const reversedWord = reversedWordArray.join('');
+  return reversedWord;
+}
+
+function isPalindrome(word) {  
+  //   copy the string to another newly declared variable
+  //   reverse characters in the string character and  assign  it to a new variable
+  //   compare reversed variable to original
+  //   return the boolean value
+  let reversedWord = reverseString(word);
+  return word === reversedWord;
 }
 
 /* 
   Add your pseudocode here
+  create a function that accepts a single string argument
+    convert string arg to lowercase
+    copy the string to another newly declared variable
+    reverse characters in the string character and  assign  it to a new variable
+    compare reversed variable to original
+    return the boolean value
+
 */
 
 /*
